@@ -1,3 +1,4 @@
 *.box
 .vagrant
+*.swp
 packer_cache/

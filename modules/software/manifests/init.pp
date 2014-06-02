@@ -1,6 +1,6 @@
 class software
 {
-  $pkgs = ['zsh', 'base-devel', 'i3']
+  $pkgs = ['zsh']
   package { $pkgs :
     ensure => latest
   }

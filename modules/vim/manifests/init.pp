@@ -6,21 +6,22 @@ class vim
 
   file { '/home/tom/.vimrc' :
     ensure => present,
-    source => 'puppet:///modules/vim/.vimrc'
+    source => 'puppet:///modules/vim/vimrc'
   }
 
-  file { '/home/tom/.vim' :
-    ensure => directory,
+  file { '/home/tom/.vim/' :
+    ensure  => directory,
+    recurse => true,
   }
 
   file { '/home/tom/.vim/colors' :
     ensure  => directory,
-    require => File['/home/tom/.vim'],
+    recurse => true,
   }
-  ->
+
   file { '/home/tom/.vim/colors/wombat.vim' :
     ensure  => present,
     source  => 'puppet:///modules/vim/wombat.vim',
-    require => File['/home/tom/.vim/colors'],
+    recurse => inf,
   }
 }

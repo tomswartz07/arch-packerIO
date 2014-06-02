@@ -1,9 +1,11 @@
 class accounts
 {
   user { "tom" :
-    ensure => present,
-    home   => '/home/tom',
-    groups => ['plugdev','power','video','wheel'],
-    shell  => '/bin/zsh',
+    ensure     => present,
+    managehome => true,
+    home       => '/home/tom',
+    password   => 'tom',
+    groups     => ['power','video','wheel'],
+    shell      => '/bin/zsh',
   }
 }

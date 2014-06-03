@@ -9,4 +9,7 @@ node default {
   class { 'accounts' :
     stage => 'first',
   }
+  class { 'pacman' :
+    iLoveCandy => true,
+  }
 }

@@ -46,12 +46,12 @@ class { 'pacman' :
 ```
 
 ## Reference
-
-[*iLoveCandy*]
-Inserts 'easter egg' configuration option into pacman.conf
-Changes the standard [###--] progress bar with [---C o o ]
-styled after the 1980's 'Pacman' game.
-
+```
+   [*iLoveCandy*]
+   Inserts 'easter egg' configuration option into pacman.conf
+   Changes the standard [###--] progress bar with [---C o o ]
+   styled after the 1980's 'Pacman' game.
+```
 ## Limitations
 
 Pacman only functions on ArchLinux or ArchLinux derivatives.

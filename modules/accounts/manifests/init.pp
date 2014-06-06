@@ -7,5 +7,6 @@ class accounts
     password   => 'tom',
     groups     => ['power','video','wheel'],
     shell      => '/bin/zsh',
+    require    => Class['zsh'],
   }
 }
